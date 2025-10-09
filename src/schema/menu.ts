@@ -3,7 +3,6 @@ import { customSchema } from "./custom-schema.ts";
 
 export const menu = customSchema.table('menu', {
   id: serial('id').primaryKey(),
-  sh
   name: text('name').notNull(),
   stock :boolean('stock').notNull(),
   price: integer('price').notNull(),
